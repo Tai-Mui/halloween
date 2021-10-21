@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {ScrollView, Text, StyleSheet, FlatList, View} from 'react-native';
 import MovieCard from './MovieCard';
-import { fetchMovies } from './moviesStore';
+import { fetchMovies } from './moviesServices';
 
 export function ListMovies() {
 

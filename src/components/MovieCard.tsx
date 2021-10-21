@@ -4,7 +4,7 @@ import { styles } from '../styles/HomePageStyle';
 
 type Props={movie:{title:string}}
 
-const MoviesService = (props:Props) => {
+const MovieCard = (props:Props) => {
     return (
       <View>
         {<Text style={styles.listMovies}> {props.movie.title} </Text>}         
@@ -12,4 +12,4 @@ const MoviesService = (props:Props) => {
     );
   }
 
-export default MoviesService;
+export default MovieCard;

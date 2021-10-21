@@ -1,0 +1,14 @@
+com/projet_android_halloween/ReactNativeFlipper.java
+ com.projet_android_halloween.ReactNativeFlipper
+ com.projet_android_halloween.ReactNativeFlipper$1
+ com.projet_android_halloween.ReactNativeFlipper$2
+ com.projet_android_halloween.ReactNativeFlipper$2$1
+com/projet_android_halloween/BuildConfig.java
+ com.projet_android_halloween.BuildConfig
+com/projet_android_halloween/MainApplication.java
+ com.projet_android_halloween.MainApplication
+ com.projet_android_halloween.MainApplication$1
+com/projet_android_halloween/MainActivity.java
+ com.projet_android_halloween.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
