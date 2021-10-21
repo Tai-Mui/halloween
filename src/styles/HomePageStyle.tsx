@@ -18,6 +18,15 @@ export const styles = StyleSheet.create({
       textAlign : 'center',
       marginTop: 40,
       marginBottom: 0
+    },
+    image: {
+      resizeMode: "cover",
+      height: 300,
+      width: 400
+    },
+    back: {
+      height: 50,
+      width: 100
     }
 });
 

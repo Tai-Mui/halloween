@@ -28,7 +28,6 @@ export function ListMovies(props : Props) {
       <ScrollView>
       {
         movies.map((movie, key)=>{
-          console.log(movie.imdb_id);
           return (
             <TouchableHighlight key={key}
                 onPress={() =>

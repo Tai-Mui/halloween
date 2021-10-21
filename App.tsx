@@ -9,7 +9,7 @@
  */
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import {SafeAreaView, useColorScheme} from 'react-native';
+import {ImageBackground, SafeAreaView, useColorScheme} from 'react-native';
 import { HomePage } from './src/components/HomePage';
 import { ListMoviesPage } from './src/components/ListMoviesPage';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -26,7 +26,8 @@ const Stack = createStackNavigator<TStackRoute>();
 
 const defaultTheme = {
   backgroundColor: 'black',
-  color: 'white'
+  color: 'white',
+  ImageBackground: ''
 }
 
 const MyTheme = {
