@@ -20,9 +20,16 @@ export const styles = StyleSheet.create({
       marginBottom: 0
     },
     image: {
+      width: "100%",
+      height: 300,
+      position: 'absolute',
+      top: undefined,
+      bottom:0
+    },
+    imageStyle: {
       resizeMode: "cover",
       height: 300,
-      width: 400
+      alignSelf: "flex-end"
     },
     back: {
       height: 50,

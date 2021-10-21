@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, ImageBackground} from 'react-native';
 import { styles } from '../styles/HomePageStyle';
 import { HomeCategories } from './HomeCategories';
 
@@ -11,15 +11,14 @@ export class HomePage extends React.Component<any,any> {
 
   render() {
     return (
-      <View>
-        <HomeTitle/>       
-        <HomeCategories categories = {categories}/>
-        <Image source={require('../assets/imgHome.jpg')} style={styles.image}/>
+      <View style={{flex: 1}}>
+        <HomeTitle/>
+        <HomeCategories categories = {categories} />
+        <ImageBackground source={require('../assets/imgHome.jpg')} style={styles.image} imageStyle={styles.imageStyle} />
       </View>
-
     );
-  };
-};
+  }
+}
 
 
   

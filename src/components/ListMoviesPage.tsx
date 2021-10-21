@@ -1,7 +1,5 @@
 import React from 'react';
-import {View, Text, ListViewBase} from 'react-native';
-import { baseProps } from 'react-native-gesture-handler/lib/typescript/handlers/gestureHandlers';
-import { styles } from '../styles/HomePageStyle';
+import { View } from 'react-native';
 import { HomeTitle } from './HomeTitle';
 import { ListMovies } from './ListMovies';
 import { Return } from './Return';
