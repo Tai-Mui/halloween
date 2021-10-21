@@ -11,6 +11,13 @@ export const styles = StyleSheet.create({
     listMovies: {
       color: 'white',
       fontSize: 20
+    },
+    categories: {
+      color : 'white',
+      fontSize: 40,
+      textAlign : 'center',
+      marginTop: 40,
+      marginBottom: 0
     }
 });
 

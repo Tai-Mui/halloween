@@ -9,9 +9,9 @@ export function HomeCategories(props : Props) {
     const navigation = useNavigation();
     return (
             <View>{
-                props.categories.map((cat) => {
+                props.categories.map((cat, index) => {
                     return (
-                        <TouchableHighlight
+                        <TouchableHighlight key = {index}
                             onPress={() =>
                             navigation.navigate('/listMovies', {categorie : cat})
                         }>

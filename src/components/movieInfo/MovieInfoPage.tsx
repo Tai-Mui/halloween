@@ -5,17 +5,17 @@ import { HomeTitle } from '../HomeTitle';
 import { movieInfoStore, TMovieInfo } from "./store/MovieInfoStore";
 
 type Props = {
-    id: string;
+    route: {params: {id: string}};
 };
 
 export function MovieInfoPage(props: Props) {
-    //const navigation = useNavigation();
+    const navigation = useNavigation();
     
     const [movie, setMovie] = useState<TMovieInfo>();
 
     useEffect(() => {
         movieInfoStore
-            .fetchMovieInfo(props.id)
+            .fetchMovieInfo(props.route.params.id)
             .then((response) => response.json())
             .then((res: {results:TMovieInfo}) => { 
                 setMovie(res.results);

@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import {ScrollView, Text, StyleSheet, FlatList, View} from 'react-native';
+import {ScrollView, View, TouchableHighlight} from 'react-native';
 import MovieCard from './MovieCard';
-import { fetchMovies } from './moviesServices';
+import { movieStore } from './MoviesStore';
+import {useNavigation} from '@react-navigation/native';
 
-export function ListMovies() {
+type Props = {
+  categorie : string
+} 
+
+export function ListMovies(props : Props) {
+  const navigation = useNavigation();
 
   const [movies, setMovies] = useState([]);
 
   useEffect(() =>{
-    fetchMovies()
+    movieStore.fetchMovies(props.categorie)
       .then((response) => response.json())
       .then(({results}) => { 
         setMovies(results);
@@ -22,10 +28,16 @@ export function ListMovies() {
       <ScrollView>
       {
         movies.map((movie, key)=>{
+          console.log(movie.imdb_id);
           return (
-             <View>
+            <TouchableHighlight key={key}
+                onPress={() =>
+                  navigation.navigate('/infosMovie', {id : movie.imdb_id})
+            }>
+             <View key={key}>
                 <MovieCard movie={movie} key={key} />
             </View>
+            </TouchableHighlight>
           )
         })
       }
