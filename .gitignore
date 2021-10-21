@@ -9,6 +9,8 @@ dist/
 android/build/
 ios/build/
 android/app/build
+.vscode
+.idea
 
 # Compiled Java class files
 *.class
