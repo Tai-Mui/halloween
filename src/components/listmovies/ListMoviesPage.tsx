@@ -19,7 +19,7 @@ export function ListMoviesPage (props : Props){
             {"Category : " + props.route.params.categorie}
           </Text>
         </View>
-        <ListMovies categorie = {props.route.params.categorie}/>
+        <ListMovies categorie = {props.route.params.categorie} />
       </View>
     );
 };
