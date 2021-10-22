@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { HomeTitle } from '../HomeTitle';
 import { Return } from '../Return';
 import { ListMovies } from './ListMovies';
@@ -13,7 +13,12 @@ export function ListMoviesPage (props : Props){
     return (
       <View>
         <HomeTitle/>
-        <Return />
+        <View style={{marginLeft: 20}}>
+          <Return />
+          <Text style={{color: 'white', fontSize: 20, marginVertical: 10, fontWeight: 'bold'}}>
+            {"Category : " + props.route.params.categorie}
+          </Text>
+        </View>
         <ListMovies categorie = {props.route.params.categorie}/>
       </View>
     );

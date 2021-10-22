@@ -14,12 +14,20 @@ export const styles = StyleSheet.create({
       marginVertical: 20,
       marginHorizontal: 20
     },
+    categorieContainer: {
+      backgroundColor:'orange', 
+      marginVertical: 20, 
+      marginHorizontal: 20,
+      borderBottomLeftRadius: 20,
+      borderBottomRightRadius: 20,
+      borderTopLeftRadius: 20,
+      borderTopRightRadius: 20
+    },
     categories: {
       color : 'white',
       fontSize: 40,
       textAlign : 'center',
-      marginTop: 40,
-      marginBottom: 0
+      lineHeight: 80,
     },
     image: {
       width: "100%",

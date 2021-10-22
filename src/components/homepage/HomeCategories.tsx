@@ -15,7 +15,7 @@ export function HomeCategories(props : Props) {
                             onPress={() =>
                             navigation.navigate('/listMovies', {categorie : cat})
                         }>
-                            <View>
+                            <View style={styles.categorieContainer}>
                                 <Text style = {styles.categories}>
                                     {cat}
                                 </Text>
