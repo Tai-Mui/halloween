@@ -2,8 +2,7 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
     movieContainer: {
-        marginLeft: 15,
-        marginRight: 15,
+        marginHorizontal: 20,
         flex: 1
     },
     movieText: {
@@ -13,7 +12,7 @@ export const styles = StyleSheet.create({
     movieTitle: {
         fontSize: 20,
         fontWeight: 'bold',
-        marginBottom: 15
+        marginBottom: 20
     },
     movieImage: {
         width: 180,
@@ -24,7 +23,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     rightPanel: {
-        marginLeft: 15,
+        marginLeft: 20,
         display: 'flex',
         flexDirection: 'row'
     }

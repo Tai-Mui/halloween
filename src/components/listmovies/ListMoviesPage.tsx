@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import { HomeTitle } from './HomeTitle';
+import { HomeTitle } from '../HomeTitle';
+import { Return } from '../Return';
 import { ListMovies } from './ListMovies';
-import { Return } from './Return';
+
 
 type Props = {
   route: {params: {categorie: string}};

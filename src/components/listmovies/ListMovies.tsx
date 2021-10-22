@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import {ScrollView, View, TouchableHighlight} from 'react-native';
-import MovieCard from './MovieCard';
-import { movieStore } from './MoviesStore';
 import {useNavigation} from '@react-navigation/native';
+import { movieStore } from './store/MoviesStore';
+import MovieCard from './MovieCard';
 
 type Props = {
   categorie : string

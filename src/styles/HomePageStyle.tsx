@@ -10,7 +10,9 @@ export const styles = StyleSheet.create({
     },
     listMovies: {
       color: 'white',
-      fontSize: 20
+      fontSize: 20,
+      marginVertical: 20,
+      marginHorizontal: 20
     },
     categories: {
       color : 'white',

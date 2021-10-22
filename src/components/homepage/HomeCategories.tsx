@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableHighlight} from 'react-native';
-import { styles } from '../styles/HomePageStyle';
 import {useNavigation} from '@react-navigation/native';
+import { styles } from '../../styles/HomePageStyle';
 
 type Props = {categories :string[]}
 

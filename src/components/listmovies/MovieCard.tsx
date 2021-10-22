@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Button, Alert} from 'react-native';
-import { styles } from '../styles/HomePageStyle';
+import { styles } from '../../styles/HomePageStyle';
 
 type Props={movie:{title:string}}
 

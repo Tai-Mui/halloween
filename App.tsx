@@ -9,11 +9,11 @@
  */
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import {ImageBackground, SafeAreaView, useColorScheme} from 'react-native';
-import { HomePage } from './src/components/HomePage';
-import { ListMoviesPage } from './src/components/ListMoviesPage';
+import {SafeAreaView, useColorScheme} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { HomePage } from './src/components/homepage/HomePage';
+import { ListMoviesPage } from './src/components/listmovies/ListMoviesPage';
 import { MovieInfoPage } from './src/components/movieInfo/MovieInfoPage';
 
  export type TStackRoute = {

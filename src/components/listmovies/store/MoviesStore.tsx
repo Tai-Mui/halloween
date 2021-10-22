@@ -1,4 +1,4 @@
-import {FetchService} from '../common/service/FetchService'
+import { FetchService } from "../../../common/service/FetchService";
 
 class MovieStore extends FetchService {
     constructor() {
